@@ -13,7 +13,7 @@ export class Snacks {
     <img class="chip" src="//via.placeholder.com/50">
     <h2>${this.name}</h2>
     <h3>$${this.price}</h3>
-    <div class="d-flex justify-content-center"> <div class="d-flex justify-content-center" onclick="app.snacksController.buySnacks()">
+    <div class="d-flex justify-content-center"> <div class="d-flex justify-content-center" onclick="app.snacksController.buy()">
     <button class="btn btn-primary button">Buy</button>
   </div>
   </div>

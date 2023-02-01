@@ -21,9 +21,9 @@ export class SnacksController {
         snacks.forEach(s => template += s.ListTemplate)
         setHTML('snacks', template)
     }
-    setBuySnacks(name) {
-        console.log('you selected this item' + name);
-        snacksService.setBuySnacks(name)
+    buy() {
+
+        console.log('clicked buy')
     }
 
 

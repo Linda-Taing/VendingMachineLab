@@ -1,9 +1,7 @@
-
-//Private Functions
-
 import { appState } from "../AppState.js"
 import { setHTML } from "../Utils/Writer.js"
 
+//Private Functions
 function _drawSnacks() {
     let snacks = appState.snacks
     let template = ''

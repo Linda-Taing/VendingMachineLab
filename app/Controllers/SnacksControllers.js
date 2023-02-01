@@ -8,9 +8,9 @@ function _drawSnacks() {
     let snacks = appState.snacks
     let template = ''
     snacks.forEach(snack => template += snack.ListTemplate)
-    console.log('check to see snack here', template)
+    // console.log('check to see snack here', template)
     document.getElementById('snacks').innerHTML = template
-    setHTML('snacks', template)
+    // setHTML('snacks', template)
 }
 
 
@@ -18,6 +18,18 @@ export class SnacksController {
 
     constructor() {
         _drawSnacks()
-
+        let snacks = appState.snacks
+        let template = ''
+        snacks.forEach(s => template += s.ListTemplate)
+        setHTML('snacks', template)
     }
+    setBuySnacks(name) {
+        console.log('you selected this item' + name);
+        snacksService.setBuySnacks(name)
+    }
+
+
+
 }
+
+

@@ -10,12 +10,13 @@ export class Snacks {
   get ListTemplate() {
 
     return `<div class="col-3 m-4 py-3 text-center card display-card">
-    <img class="chip" src="//via.placeholder.com/30">
+    <img class="chip" src="//via.placeholder.com/50">
     <h2>${this.name}</h2>
     <h3>$${this.price}</h3>
-    <div class="d-flex justify-content-center">
-    <button onclick="buySelectedSnack() class="text-center btn btn-secondary button">BUY</button>
-    </div>
+    <div class="d-flex justify-content-center"> <div class="d-flex justify-content-center" onclick="app.snacksController.buySnacks()">
+    <button class="btn btn-primary button">Buy</button>
+  </div>
+  </div>
     </div> `
   }
 

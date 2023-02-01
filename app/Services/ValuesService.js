@@ -26,5 +26,11 @@ class ValuesService {
   }
 }
 
-export const valuesService = new ValuesService();
+
+
+
+
+export const snacksService = new snacksService()
+
+// export const valuesService = new ValuesService();
 

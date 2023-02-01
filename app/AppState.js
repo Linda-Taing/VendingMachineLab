@@ -29,9 +29,9 @@ class AppState extends EventEmitter {
         imgurl: '//via.placeholder.com 50',
       }
     ),
-
   ]
-
+  /** @type {import('./Models/Snack').Snack|null} */
+  buySnacks = null
 
 
 
